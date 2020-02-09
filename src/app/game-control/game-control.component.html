@@ -1,0 +1,11 @@
+<div class="col-xs-4">
+    <button class="btn btn-primary" (click)="onStartClick()"
+    [disabled]="startDisabled">Start Counting</button>
+</div>
+<div class="col-xs-4">
+    <button class="btn btn-primary" (click)="onStopClick()"
+    [disabled]="stopDisabled">Stop Counting</button>
+</div>
+<div class="col-xs-4">
+    <p *ngIf="id > 0"> Counter : {{id}}</p>
+</div>
